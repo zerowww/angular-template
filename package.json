@@ -34,6 +34,7 @@
 		"@types/node": "^12.11.1",
 		"@typescript-eslint/eslint-plugin": "4.16.1",
 		"@typescript-eslint/parser": "4.16.1",
+		"cz-conventional-changelog": "3.3.0",
 		"eslint": "^7.6.0",
 		"eslint-plugin-import": "2.22.1",
 		"eslint-plugin-jsdoc": "30.7.6",
@@ -62,5 +63,10 @@
 			"npx prettier --write",
 			"eslint src/**/*.ts --fix"
 		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }

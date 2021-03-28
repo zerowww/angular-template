@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-template-e16ea": {
+      "hosting": {
+        "temporary": [
+          "angular-template-e16ea"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "main": "angular-template-e16ea"
+  }
+}

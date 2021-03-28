@@ -30,11 +30,14 @@
 		"@angular-eslint/template-parser": "2.0.2",
 		"@angular/cli": "~11.2.6",
 		"@angular/compiler-cli": "~11.2.7",
+		"@commitlint/cli": "^12.0.1",
+		"@commitlint/config-angular": "^12.0.1",
 		"@types/jasmine": "~3.6.0",
 		"@types/node": "^12.11.1",
 		"@typescript-eslint/eslint-plugin": "4.16.1",
 		"@typescript-eslint/parser": "4.16.1",
-		"cz-conventional-changelog": "3.3.0",
+		"commitizen": "^4.2.3",
+		"cz-customizable": "^6.3.0",
 		"eslint": "^7.6.0",
 		"eslint-plugin-import": "2.22.1",
 		"eslint-plugin-jsdoc": "30.7.6",
@@ -55,7 +58,8 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "ng lint && lint-staged"
+			"pre-commit": "ng lint && lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
 		}
 	},
 	"lint-staged": {
@@ -66,7 +70,7 @@
 	},
 	"config": {
 		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
+			"path": "./node_modules/cz-customizable"
 		}
 	}
 }

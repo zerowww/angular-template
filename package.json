@@ -7,8 +7,8 @@
 		"build": "ng build",
 		"lint": "ng lint",
 		"lint:fix": "ng lint --fix",
-		"lint:style": "npx stylelint '**/*.sass'",
-		"lint:style:fix": "npx stylelint '**/*.sass' --fix",
+		"lint:style": "npx stylelint '**/*.scss'",
+		"lint:style:fix": "npx stylelint '**/*.scss' --fix",
 		"prettify": "npx prettier --write src/**/*.{ts,html}",
 		"dev:ssr": "ng run temporary:serve-ssr",
 		"serve:ssr": "node dist/temporary/server/main.js",
@@ -80,7 +80,7 @@
 		"prettier": "^2.2.1",
 		"protractor": "~7.0.0",
 		"stylelint": "^13.12.0",
-		"stylelint-config-sass-guidelines": "^8.0.0",
+		"stylelint-scss": "^3.19.0",
 		"stylelint-prettier": "^1.2.0",
 		"ts-node": "~8.3.0",
 		"typescript": "~4.1.5"
@@ -92,9 +92,9 @@
 		}
 	},
 	"lint-staged": {
-		"./src/**/*.{ts,html,sass}": [
+		"./src/**/*.{ts,html,scss}": [
 			"npx prettier --write",
-			"npx stylelint '**/*.sass' --fix",
+			"npx stylelint '**/*.scss' --fix",
 			"eslint src/**/*.ts --fix"
 		]
 	},

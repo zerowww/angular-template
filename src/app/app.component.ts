@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
 	selector: 'tmp-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = 'temporary';
+	constructor(private translocoService: TranslocoService) {}
+
+	onFr(): void {
+		this.translocoService.setActiveLang('fr');
+	}
+
+	onEn(): void {
+		this.translocoService.setActiveLang('en');
+	}
 }

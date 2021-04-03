@@ -5,6 +5,7 @@ It integrates:
 
 - latest angular version (11.2 atm)
 - ssr w/ firebase functions
+- on the fly translation
 - firebase hosting
 - eslint
 - stylelint
@@ -17,4 +18,6 @@ It integrates:
 You will need to customise:
 
 - "tmp" prefix in angular.json and eslintrc.json
+- "temporary" project name in angular.json
 - firebase hosting config in .firebaserc
+- change environment.baseUrl
